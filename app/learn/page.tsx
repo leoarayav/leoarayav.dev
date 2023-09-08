@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { allCourses } from "contentlayer/generated"
 import CourseLink from "@/components/course-link"
 
-export const config: Metadata = {
+export const metadata: Metadata = {
     title: "Cursos",
     description: "Aprende algunos cursos de diferentes temas",
 }
