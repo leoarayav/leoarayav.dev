@@ -1,0 +1,225 @@
+---
+title: Simbolo de Sistema
+description: Aprende a utilizar la consola o terminal de Windows para ejecutar comandos y scripts.
+author:
+    name: Leo Araya
+    alias: leoarayav
+duration: 1 hora
+level: basico
+---
+
+<TableOfContents title="Tabla de contenidos">
+- [¿Qué es el **_simbolo de sistema_** en nuestro sistema operativo?](#qué-es-el-simbolo-de-sistema-o-command-prompt)
+- [¿Cómo abrir el **_simbolo de sistema_** en Windows?](#cómo-abrir-el-simbolo-de-sistema-en-windows)
+- [Comandos](#comandos)
+    - [¿Cómo ejecutar un comando?](#cómo-ejecutar-un-comando)
+    - [¿Cómo ejecutar un comando con privilegios de administrador?](#cómo-ejecutar-un-comando-con-privilegios-de-administrador)
+    - [Comandos básicos de Windows](#comandos-básicos-de-windows)
+        - [**_cd_**](#cd)
+        - [**_dir_**](#dir)
+        - [**_cls_**](#cls)
+        - [**_exit_**](#exit)
+        - [**_help_**](#help)
+        - [**_ipconfig_**](#ipconfig)
+        - [**_ping_**](#ping)
+        - [**_systeminfo_**]()
+        - [**_tasklist_**]()
+        - [**_taskkill_**]()
+        - [**_ver_**]()
+    - [Argumentos]()
+- [Ventajas de utilizar el **_simbolo de sistema_**]()
+- [Desventajas de utilizar el **_simbolo de sistema_**]()
+</TableOfContents>
+
+Alguna vez te has preguntado ¿qué es el **_simbolo de sistema_**? ¿para qué sirve? ¿cómo se utiliza? 
+¿qué comandos existen? ¿qué ventajas y desventajas tiene? En este artículo te explicaremos 
+todo lo que necesitas saber sobre esta herramienta que nos ofrece Windows, para poder ejecutar
+y administrar nuestro sistema operativo.
+
+<Image
+  alt={`Simbolo de Sistema`}
+  src={`/images/courses/cmdprompt.png`}
+  width={2612 / 2}
+  height={2140 / 2}
+  priority
+/>
+
+## ¿Qué es el simbolo de sistema o command prompt?
+El **_simbolo de sistema_** o **_command prompt_** es una herramienta que nos ofrece Windows, 
+para poder ejecutar y administrar nuestro sistema operativo. Esta herramienta nos permite
+ejecutar comandos y scripts, para realizar tareas de administración del sistema operativo.
+
+Es intérprete de comandos en OS/2 y sistemas basados en Windows NT (incluyendo Windows 2000
+y Windows XP). El intérprete de comandos de Windows NT es cmd.exe. El intérprete de comandos
+de Windows 9x es command.com, que es una versión reducida del intérprete de comandos de
+MS-DOS. El intérprete de comandos de Windows 9x no es compatible con el intérprete de
+comandos de Windows NT y de la familia de windows 8.1x
+
+Fue lanzado el año 1987 en el mes de Diciembre y desarrollado en el lenguaje de programación
+[C++](https://es.wikipedia.org/wiki/C%2B%2B) por Microsoft y es un tipo de programa [Shell](https://es.wikipedia.org/wiki/Shell_de_comandos).
+
+## ¿Cómo abrir el simbolo de sistema en Windows?
+Para abrir el **_simbolo de sistema_** en Windows, debemos seguir los siguientes pasos:
+
+1. Presiona la tecla <kbd>Windows</kbd> + <kbd>R</kbd> para abrir la ventana de ejecutar.
+2. Escribe _cmd_ y presiona <kbd>Enter</kbd> o haz clic en el botón **Aceptar**.
+3. Se abrirá la ventana del **_simbolo de sistema_**.
+
+Dentro del **_simbolo de sistema_** podemos ejecutar comandos y scripts, para realizar tareas
+de administración del sistema operativo, basicamente podemos manejar nuestro sistema operativo
+de manera eficaz y rápida.
+
+## Comandos
+Un comando es una orden/instrucción es una instrucción que el usuario proporciona 
+a un sistema informático, desde la línea de órdenes o desde una llamada de programación. 
+Puede ser interno o externo. Suele admitir parámetros o argumentos de entrada, 
+lo que permite modificar su comportamiento predeterminado.
+
+<Image
+    alt={`Comandos`}
+    src={`/images/courses/command.png`}
+    width={2612 / 2}
+    height={600 / 2}
+    priority
+/>
+
+### ¿Cómo ejecutar un comando?
+Para ejecutar un comando, debemos escribir el nombre del comando y presionar la tecla
+<kbd>Enter</kbd> para ejecutarlo dentro del Simbolo de Sistema, es decir si queremos
+ejecutar el comando **_dir_** debemos escribir lo siguiente:
+
+```bash title="C:/cmd"
+dir
+```
+
+### ¿Cómo ejecutar un comando con privilegios de administrador?
+Para ejecutar un comando con privilegios de administrador, debemos abrir el **_simbolo de sistema_**
+como administrador, para ello debemos seguir los siguientes pasos:
+
+1. Presiona la tecla <kbd>Windows</kbd> + <kbd>R</kbd> para abrir la ventana de ejecutar.
+2. Escribe _cmd_ y presiona <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd> o haz clic en el botón **Aceptar**.
+3. Se abrirá la ventana del **_simbolo de sistema_** con privilegios de administrador.
+
+De esa forma podremos ejecutar comandos con privilegios de administrador teniendo
+el control absoluto de nuestro sistema operativo.
+
+### Comandos básicos de Windows
+A continuación te mostraremos los comandos básicos de Windows, para que puedas
+utilizarlos en tu día a día o practicar con ellos.
+
+#### <kbd>cd</kbd>
+El comando **_cd_** nos permite cambiar de directorio.
+
+```bash title="C:/cmd"
+cd C:/Users/leoarayav
+```
+
+Asi podemos cambiar de directorio, en este caso cambiamos al directorio **_leoarayav_**.
+
+#### <kbd>dir</kbd>
+El comando **_dir_** nos permite listar los archivos y directorios de la ruta actual.
+
+```bash title="C:/cmd"
+dir
+```
+
+Te deberá aparecer algo como esto
+
+```bash title="C:/cmd"
+ Volume in drive C is Windows
+ Volume Serial Number is 0C0F-0C0F
+
+ Directory of C:\Users\leoarayav
+
+08/09/2021  10:00    <DIR>          .
+08/09/2021  10:00    <DIR>          ..
+08/09/2021  10:00    <DIR>          .vscode
+08/09/2021  10:00    <DIR>          Desktop
+08/09/2021  10:00    <DIR>          Documents
+08/09/2021  10:00    <DIR>          [...]
+```
+
+#### <kbd>cls</kbd>
+El comando **_cls_** nos permite limpiar la pantalla del **_simbolo de sistema_**.
+
+```bash title="C:/cmd"
+cls
+```
+
+<Alert type="info" title="Tener en consideración">
+Si el directorio está vacío no se mostrará nada.
+</Alert>
+
+#### <kbd>exit</kbd>
+El comando **_exit_** nos permite salir del **_simbolo de sistema_**.
+
+```bash title="C:/cmd"
+exit
+```
+
+#### <kbd>help</kbd>
+El comando **_help_** nos permite mostrar una lista de comandos disponibles.
+
+```bash title="C:/cmd"
+help
+```
+
+Te deberá aparecer algo como esto
+
+```bash title="C:/cmd"
+For more information on a specific command, type HELP command-name
+ASSOC          Displays or modifies file extension associations.
+ATTRIB         Displays or changes file attributes.
+BREAK          Sets or clears extended CTRL+C checking.
+BCDEDIT        Sets properties in boot database to control boot loading.
+CACLS          Displays or modifies access control lists (ACLs) of files.
+CALL           Calls one batch program from another.
+...
+```
+
+#### <kbd>ipconfig</kbd>
+El comando **_ipconfig_** nos permite mostrar la configuración de red.
+
+```bash title="C:/cmd"
+ipconfig
+```
+
+> También puedes utilizar el comando **_ipconfig /all_** para mostrar la configuración de red detallada.
+
+Te deberá aparecer algo como esto
+
+```bash title="C:/cmd"
+Windows IP Configuration
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : 
+   Link-l
+    IP
+    Subnet
+    Default Gateway . . . . . . . . . : fe80::c0a8:1:1%3
+    ...
+```
+
+#### <kbd>ping</kbd>
+El comando **_ping_** nos permite enviar un paquete de datos a un host específico.
+
+```bash title="C:/cmd"
+ping google.com
+```
+
+Podrás ver algo como esto
+
+<Image
+    alt={`Ping`}
+    src={`/images/courses/ping.jpg`}
+    width={2612 / 2}
+    height={600 / 2}
+    priority
+/>
+
+<Alert type="warning" title="Atención 🎈">
+El curso se está escribiendo, por lo que aún no está terminado, espero que te sirva lo que hay hasta ahora,
+puedes buscar más información en internet, si quieres puedes contribuir con el curso puedes
+contactarte conmigo por [GitHub](https://github.com/leoarayav), gracias por tu comprensión.
+</Alert>
