@@ -26,7 +26,7 @@ export async function generateMetadata({
     const course = await getCourseFromParams(params)
     if (!course) return notFound()
     return {
-        title: course.title,
+        title: 'Curso: ' + course.title,
         description: course.description,
         openGraph: {
             type: 'article',
