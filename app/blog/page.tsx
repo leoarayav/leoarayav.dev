@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 
 export default async function BlogPage() {
     return (
-        <section className="mt-10">
-            <h2 className="font-bold text-2xl mb-8 tracking-tighter">Lee mis publicaciones</h2>
+        <section className="mt-10 flex flex-col gap-6">
+            <h2 className="font-bold text-2xl mb-2 tracking-tighter">Lee mis publicaciones</h2>
             {
                 allPosts
                     .sort((a, b) => {
@@ -21,12 +21,12 @@ export default async function BlogPage() {
                         return 1
                     })
                     .map((post) => (
-                        <Link
-                            className="flex flex-col space-y-2 mb-4 border px-4 py-3 border-neutral-800 text-clip bg-gradient-to-b from-neutral-900 to-neutral-950 rounded-md hover:from-neutral-800 hover:to-neutral-900"
+                        <a
+                            className="flex flex-col items-center w-full justify-between py-6 px-6 md:px-6 border border-neutral-900 rounded-md hover:bg-neutral-900 hover:text-white transition duration-300 ease-in-out"
                             key={post.slug}
                             href={`/blog/${post.slug}`}
                         >
-                            <div className="w-full flex-col contents px-1">
+                            <div className="w-full px-1">
                                 <div className="text-sm mb-1">
 
                                     {
@@ -42,7 +42,7 @@ export default async function BlogPage() {
                                     {post.description}
                                 </p>
                             </div>
-                        </Link>
+                        </a>
                     ))
             }
         </section>
