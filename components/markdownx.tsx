@@ -20,7 +20,7 @@ const Alert = (props: any) => {
             type = "bg-neutral-900 bg-opacity-20 border-neutral-700 text-neutral-200";
     }
     return (
-        <div className={`border ${type} bg-opacity-20 rounded-md text-sm max-w-lg mt-5 mb-5`} role="alert">
+        <div className={`border ${type} bg-opacity-20 rounded-md text-md max-w-lg mt-5 mb-5`} role="alert">
             <h5 className="font-bold text-md px-4 mt-4">
                 {props.title}
             </h5>

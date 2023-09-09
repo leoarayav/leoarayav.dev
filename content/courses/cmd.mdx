@@ -22,13 +22,13 @@ level: basico
         - [**_help_**](#help)
         - [**_ipconfig_**](#ipconfig)
         - [**_ping_**](#ping)
-        - [**_systeminfo_**]()
-        - [**_tasklist_**]()
-        - [**_taskkill_**]()
-        - [**_ver_**]()
-    - [Argumentos]()
-- [Ventajas de utilizar el **_simbolo de sistema_**]()
-- [Desventajas de utilizar el **_simbolo de sistema_**]()
+        - [**_systeminfo_**](#systeminfo)
+        - [**_tasklist_**](#tasklist)
+        - [**_taskkill_**](#taskkill)
+        - [**_ver_**](#ver)
+    - [Argumentos](#argumentos)
+- [Ventajas de utilizar el **_simbolo de sistema_**](#ventajas-de-utilizar-el-simbolo-de-sistema)
+- [Desventajas de utilizar el **_simbolo de sistema_**](#desventajas-de-utilizar-el-simbolo-de-sistema)
 </TableOfContents>
 
 Alguna vez te has preguntado ¿qué es el **_simbolo de sistema_**? ¿para qué sirve? ¿cómo se utiliza? 
@@ -218,8 +218,123 @@ Podrás ver algo como esto
     priority
 />
 
-<Alert type="warning" title="Atención 🎈">
-El curso se está escribiendo, por lo que aún no está terminado, espero que te sirva lo que hay hasta ahora,
-puedes buscar más información en internet, si quieres puedes contribuir con el curso puedes
-contactarte conmigo por [GitHub](https://github.com/leoarayav), gracias por tu comprensión.
-</Alert>
+#### <kbd>systeminfo</kbd>
+El comando **_systeminfo_** nos permite mostrar la información del sistema.
+
+```bash title="C:/cmd"
+systeminfo
+```
+
+Te deberá aparecer algo como esto
+
+```bash title="C:/cmd"
+Host Name:                 DESKTOP-XXXXXXX
+OS Name:                   Microsoft Windows 10 Pro
+OS Version:                10.0.19043 N/A Build 19043
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+...
+```
+
+#### <kbd>tasklist</kbd>
+El comando **_tasklist_** nos permite mostrar una lista de procesos en ejecución.
+
+```bash title="C:/cmd"
+tasklist
+```
+
+Te deberá aparecer algo como esto
+
+```bash title="C:/cmd"
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0      1,544 K
+Registry                        96 Services                   0     10,948 K
+smss.exe                       432 Services                   0        228 K
+csrss.exe                      628 Services                   0      2,948 K
+...
+```
+
+#### <kbd>taskkill</kbd>
+El comando **_taskkill_** nos permite finalizar un proceso.
+
+```bash title="C:/cmd"
+taskkill /IM notepad.exe /F
+```
+
+> También puedes utilizar el comando **_taskkill /PID 1234 /F_** para finalizar un proceso por su ID.
+
+#### <kbd>ver</kbd>
+El comando **_ver_** nos permite mostrar la versión de Windows.
+
+```bash title="C:/cmd"
+ver
+```
+
+Te deberá aparecer algo como esto
+
+```bash title="C:/cmd"
+Microsoft Windows [Versión 10.0.19043.1165]
+```
+
+## Argumentos
+Un argumento es un valor que se pasa a un programa o a una rutina de subrutina como entrada.
+Los programas de línea de comandos, incluidos los scripts de shell, aceptan argumentos de
+línea de comandos que se pasan al programa en tiempo de ejecución.
+
+También podemos utilizar argumentos en los comandos, por ejemplo si queremos listar
+los archivos y directorios de la ruta actual, pero queremos que nos muestre los archivos
+y directorios ocultos, podemos utilizar el argumento **_/a_**.
+
+```bash title="C:/cmd"
+dir /a
+```
+
+O por ejemplo si queremos listar los archivos y directorios de la ruta actual, pero
+queremos que nos muestre los archivos y directorios ocultos y los archivos y directorios
+del sistema, podemos utilizar el argumento **_/a:h_**.
+
+```bash title="C:/cmd"
+dir /a:h
+```
+
+Los argumentos son muy útiles para poder hacer un comando más específico y poder
+obtener la información que necesitamos.
+
+Recuerda que la sintaxis es la siguiente:
+
+<pre>comando [argumento]</pre>
+
+## Ventajas de utilizar el simbolo de sistema
+- Podemos ejecutar comandos y scripts, para realizar tareas de administración del sistema operativo.
+- Podemos manejar nuestro sistema operativo de manera eficaz y rápida.
+- Podemos ejecutar comandos con privilegios de administrador teniendo el control absoluto de nuestro sistema operativo.
+- Podemos utilizar argumentos en los comandos, para hacerlos más específicos y obtener la información que necesitamos.
+- Podemos automatizar tareas con scripts.
+
+Y muchas más ventajas que podrás descubrir a medida que vayas utilizando el **_simbolo de sistema_**.
+
+## Desventajas de utilizar el simbolo de sistema
+- No es tan amigable para el usuario.
+- No es tan intuitivo.
+- No es tan visual.
+- No es tan fácil de utilizar.
+- No es tan fácil de aprender.
+
+Por eso es super importante que aprendas lo básico, para que puedas utilizarlo
+y que a la hora de administrar tu sistema operativo o ejecutar algun comando,
+tengas alguna base de conocimiento mínima para poder hacerlo.
+
+## Conclusión
+En este artículo aprendimos qué es el **_simbolo de sistema_**, cómo abrirlo, qué comandos
+existen, cómo ejecutar un comando, cómo ejecutar un comando con privilegios de administrador,
+qué son los argumentos, cuáles son las ventajas y desventajas de utilizar el **_simbolo de sistema_**.
+
+Espero que te haya gustado este pequeño mini-curso y que te haya servido para aprender un poco más
+sobre el **_simbolo de sistema_** y que puedas utilizarlo en tu día a día.
+
+Si te gustó este artículo, no olvides compartirlo con tus amigos y familiares, para que ellos
+también puedan aprender sobre el **_simbolo de sistema_**.
+
+Hasta la próxima! 👋
