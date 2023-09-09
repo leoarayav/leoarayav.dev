@@ -22,7 +22,7 @@ export default async function BlogPage() {
                     })
                     .map((post) => (
                         <a
-                            className="flex flex-col items-center w-full justify-between py-6 px-6 md:px-6 border border-neutral-900 rounded-md hover:bg-neutral-900 hover:text-white transition duration-300 ease-in-out"
+                            className="flex flex-col items-center w-full justify-between py-4 px-4 md:px-6 border border-neutral-900 rounded-md hover:bg-neutral-900 hover:text-white transition duration-300 ease-in-out"
                             key={post.slug}
                             href={`/blog/${post.slug}`}
                         >
