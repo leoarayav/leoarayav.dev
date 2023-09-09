@@ -23,11 +23,6 @@ export function Navigation({
             active: pathname === '/learn',
         },
         {
-            href: '/projects',
-            label: 'Proyectos',
-            active: pathname === '/projects',
-        },
-        {
             href: '/contact',
             label: 'Contacto',
             active: pathname === '/contact',
