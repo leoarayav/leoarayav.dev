@@ -50,7 +50,7 @@ export default function RootLayout({
     <html 
       lang="en"
       className={clsx(
-        'text-neutral-50 bg-[#000000]',
+        'text-neutral-50 bg-[#090909]',
         graphik.variable
       )}
     >

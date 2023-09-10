@@ -17,7 +17,7 @@ export default function Home() {
       <p className="mt-2 text-sm text-neutral-500">
         {sitedata.author.status}
       </p>
-      <h4 className="mt-4 text-xl text-neutral-400 font-bold tracking-tight">Acerca de mi</h4>
+      <h4 className="mt-4 text-xl text-neutral-600 font-bold tracking-tight">Acerca de mi</h4>
       <p className="mt-1 max-w-2xl text-neutral-50">
         Soy desarrollador software de manera independiente
         aprendiendo cada dia y desarrollando proyectos
@@ -26,14 +26,7 @@ export default function Home() {
         mi experiencia en esta área de la tecnología.
       </p>
       <hr className="my-6 max-w-xl border-t border-neutral-900" />
-      <h4 className="mt-4 text-xl text-neutral-400 font-bold tracking-tight">Blog</h4>
-      <p className="mt-2 max-w-2xl text-neutral-50 mb-4">
-        He creado mi propio blog para compartir mis conocimientos
-        y experiencias en el mundo del desarrollo de software,
-        también para compartir mis proyectos y tutoriales, articulos y
-        novedades de la tecnología y la programación en general.
-      </p>
-      <div className="my-8 flex flex-col space-y-4 w-full">
+      <div className="my-8 flex flex-col space-y-4 max-w-xl">
         <Suspense>
           {
             allPosts
