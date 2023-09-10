@@ -11,7 +11,15 @@ export const metadata: Metadata = {
 export default async function BlogPage() {
     return (
         <section className="mt-10 flex flex-col gap-6">
-            <h2 className="font-bold text-2xl mb-2 tracking-tighter">Lee mis publicaciones</h2>
+            <h2 className="font-bold text-2xl tracking-tighter text-neutral-600">
+                Lee mis publicaciones
+            </h2>
+            <p className="text-md max-w-xl">
+                En este espacio encontrarás mis publicaciones donde
+                comparto conocimiento y experiencias sobre el desarrollo de software,
+                tecnologías, herramientas y mucho más.
+            </p>
+            <hr className="max-w-xl border-t border-neutral-900" />
             {
                 allPosts
                     .sort((a, b) => {
