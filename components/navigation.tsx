@@ -43,7 +43,7 @@ export function Navigation({
             }
             {...props}
         >
-            <p className='text-xl font-bold mr-4 text-teal-500'>
+            <p className='text-xl font-bold mr-3 text-teal-500'>
                 <a href="/">
                     {sitedata.author.alias} {' / '}
                 </a>
